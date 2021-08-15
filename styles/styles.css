@@ -21,6 +21,7 @@ header {
 .main-title {
   text-align: center;
   margin-bottom: 5rem;
+  text-transform: none;
 }
 
 /* projects */
