@@ -1,0 +1,90 @@
+header {
+  background: var(--primaryColor);
+  padding: 5rem 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-content {
+  text-align: center;
+}
+.header-content p {
+  font-size: large;
+}
+
+/* main */
+
+.main-content {
+  padding: 4rem 0;
+}
+.main-title {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+/* projects */
+
+/* full-width */
+
+.project-info {
+  text-align: center;
+  padding: 5rem 1rem;
+}
+.project-title {
+  font-weight: bolder;
+}
+.project-desc {
+  margin-inline: auto;
+}
+
+@media screen and (min-width: 992px) {
+  .full-width {
+    display: flex;
+    align-items: center;
+  }
+  .project-info {
+    flex-basis: 50%;
+    font-size: larger;
+  }
+  .right-to-left {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .column-split {
+    display: flex;
+    width: 90vw;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 7.5rem;
+  }
+  .single-column {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-basis: 50%;
+    /* padding-right: 3rem; */
+  }
+  .column-split .project-info {
+    all: unset;
+    font-size: larger;
+    flex-basis: 100%;
+    padding-inline: 2.5rem;
+  }
+  .column-img {
+    flex: 1 1 90%;
+  }
+}
+
+#signature {
+  stroke-dasharray: 2213.206298828125;
+  stroke-dashoffset: 2213.206298828125;
+  animation: sign 5s ease-out;
+  animation-fill-mode: forwards;
+}
+@keyframes sign {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
